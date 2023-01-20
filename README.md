@@ -6,3 +6,5 @@ Create a python virtual environment and install all requirements for running the
 ## random_genre
 Get a random genre from Every Noise at Once and provide Spotify preview playlist link.
 Run random_genre.py, make sure that the csv file with genres has been created, and find new genres to listen to.
+
+Generate the csv file from time to time to ensure it is up to date.
