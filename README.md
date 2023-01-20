@@ -1,5 +1,5 @@
 # exploring_every_noise
-Experimenting with the info available from Every Noise at Once. All data collected from every https://everynoise.com.
+Experimenting with the info available from Every Noise at Once. All data collected from https://everynoise.com.
 
 Create a python virtual environment and install all requirements for running the scripts bellow from the requirements.txt file.
 
