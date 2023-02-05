@@ -1,4 +1,5 @@
-from sys import argv
+from sys import path
+path.append('../')
 from time import sleep
 from numpy.random import choice
 import pandas as pd
@@ -26,6 +27,7 @@ if __name__ == '__main__':
                 break
             except:
                 print('Please extract genres!')
+                sleep(2)
 
         else:
             print('Please input one of the options!')
@@ -40,9 +42,8 @@ if __name__ == '__main__':
             print('Enjoy {}!'.format(genre_csv.iloc[genre_choice, 1]))
             sleep(2)
             
-            print('{}: {} (follow link for a preview playlist made by Every Noise at Once)'.format(
-                (genre_csv.iloc[genre_choice, 1]), (genre_csv.iloc[genre_choice, 2])
-            ))
+            print('{}: https://open.spotify.com/playlist/{} (follow link for a preview playlist made by Every Noise at Once)'.format(
+                (genre_csv.iloc[genre_choice, 1]), (genre_csv.iloc[genre_choice, 2]).split(':')[-1]))
             break
         
         else:
