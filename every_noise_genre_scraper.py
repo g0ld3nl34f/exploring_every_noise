@@ -99,9 +99,13 @@ def extract_playlists_by_country():
 		cnp_aux = copy.deepcopy(country_needle_playlists)
 
 		for i in cnp_aux:
-			curr_country = i[0].split(' / ')[1].split(' - ')[0]
-			if curr_country != country:
-				country_needle_playlists.remove(i)
+			curr_country = i[0].split(' / ')[1]
+			if curr_country.strip() == country:
+				continue
+			else:
+				curr_country = curr_country.split(' - ')[0]
+				if curr_country != country:
+					country_needle_playlists.remove(i)
 
 		countries_names.append(country)
 		number_playlists = len(country_needle_playlists)
@@ -141,3 +145,6 @@ def extract_playlists_by_country():
 	final.to_csv('every_noise_needle.csv', sep=',', index=False, header=True)
 
 	print('Collected Needle playlists by country ♬')
+
+if __name__ == '__main__':
+	extract_playlists_by_country()
