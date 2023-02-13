@@ -39,7 +39,7 @@ if __name__ == '__main__':
         accept_suggestion = input('How about trying {}? (A)ccept or (G)et another?\n'.format(genre_csv.iloc[genre_choice, 1]))
 
         if accept_suggestion == 'A':
-            print('Enjoy {}!'.format(genre_csv.iloc[genre_choice, 1]))
+            print('♬ Enjoy {}! ♬'.format(genre_csv.iloc[genre_choice, 1]))
             sleep(2)
             
             print('{}: https://open.spotify.com/playlist/{} (follow link for a preview playlist made by Every Noise at Once)'.format(
