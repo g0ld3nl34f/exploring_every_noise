@@ -12,7 +12,7 @@ Get a random genre from Every Noise at Once and provide a link to an introductio
 To run:\
 	- Change directory to random_genre/;\
 	- Run desired file, making sure that the csv file with genres has been created;\
-	- Find new genres to listen to.\
+	- Find new genres to listen to.
 
 ## needle_playlists
 Get a General, Current, Emerging or Underground Needle playlist from a random country and provide Spotify playlist link.\
