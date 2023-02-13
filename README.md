@@ -4,6 +4,7 @@ Experimenting with the info available from Every Noise at Once. All data collect
 Create a python virtual environment and install all requirements for running the scripts bellow from the requirements.txt file.
 
 ## random_genre
+- random_genre.py\
 Get a random genre from Every Noise at Once and provide Spotify preview playlist link.\
 To run:\
 	- Change directory to random_genre/;\
