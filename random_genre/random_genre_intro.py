@@ -58,10 +58,10 @@ if __name__ == '__main__':
             sleep(2)
     
     while(True):
-        genre_choice = choice([i for i in range(genre_csv.shape[0])], size=1, replace=False)[0]
         link_to_intro = None
         
         while(link_to_intro is None):
+            genre_choice = choice([i for i in range(genre_csv.shape[0])], size=1, replace=False)[0]
             genre_url = "".join(list([val for val in genre_csv.iloc[genre_choice, 1]
             if val.isalpha() or val.isnumeric()]))
 
